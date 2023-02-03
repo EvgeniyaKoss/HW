@@ -8,6 +8,7 @@
 
 //8 7,8 -7,1 9
 
+
 (int, int) GetNumberByUser()
 {
   Console.WriteLine("Введите количество строк массива: ");
