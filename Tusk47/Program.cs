@@ -11,9 +11,9 @@
 
 (int, int) GetNumberByUser()
 {
-  Console.WriteLine("Введите количество строк массива: ");
+  Console.WriteLine("Введите количество строк массива(m): ");
   int rows = int.Parse(Console.ReadLine());
-  Console.WriteLine("Введите количество столбцов  массива: ");
+  Console.WriteLine("Введите количество столбцов  массива (n): ");
   int columns = int.Parse(Console.ReadLine());
   return (rows, columns);
 }
