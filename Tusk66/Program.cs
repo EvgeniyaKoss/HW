@@ -6,20 +6,19 @@
 
 
 int GetNumberByUser(int m, int n)
-        {
-            if (m == n)
-                return n;
+{
+    if (m == n)
+        return n;
 
-            return m + GetNumberByUser(m + 1, n);
-        }
+    return m + GetNumberByUser(m + 1, n);
+}
 Console.WriteLine("Введите значение m:");
-            int m = Convert.ToInt32(Console.ReadLine());
+int m = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Введите значение n:");
-            int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите значение n:");
+int n = Convert.ToInt32(Console.ReadLine());
 
-            if (m < n)
-                Console.WriteLine($"M = {m}, N = {n} -> {GetNumberByUser(m, n)}");
-            else
-                Console.WriteLine($"n больше m");
-        
+if (m < n)
+    Console.WriteLine($"M = {m}, N = {n} -> {GetNumberByUser(m, n)}");
+else
+    Console.WriteLine($"n больше m");

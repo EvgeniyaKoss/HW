@@ -7,18 +7,18 @@
 
 int GetNumberByUser()
 {
-  Console.Write("Введите значение n: ");
-  int num = Convert.ToInt32(Console.ReadLine());
-  return num;
+    Console.Write("Введите значение n: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
 }
 
 void PrintNumbersFrom1ToN(int n)
 {
-  if (n != 1) Console.Write($"{n}, ");
-  else Console.Write($"{n}");
-  if (n == 1) return;
-  n--;
-  PrintNumbersFrom1ToN(n);
+    if (n != 1) Console.Write($"{n}, ");
+    else Console.Write($"{n}");
+    if (n == 1) return;
+    n--;
+    PrintNumbersFrom1ToN(n);
 }
 
 int num = GetNumberByUser();

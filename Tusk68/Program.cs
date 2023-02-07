@@ -6,18 +6,18 @@
 
 int GetNumberByUser()
 {
-  Console.Write("Введите значение : ");
-  int num = Convert.ToInt32(Console.ReadLine());
-  return num;
+    Console.Write("Введите значение : ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    return num;
 }
 
 double FunctionAkerman(double m, double n)
 {
-  if (m == 0)
-    return n + 1;
-  else if (m > 0 && n == 0)
-    return FunctionAkerman(m - 1, 1);
-  else return FunctionAkerman(m - 1, FunctionAkerman(m, n - 1));
+    if (m == 0)
+        return n + 1;
+    else if (m > 0 && n == 0)
+        return FunctionAkerman(m - 1, 1);
+    else return FunctionAkerman(m - 1, FunctionAkerman(m, n - 1));
 }
 int m = GetNumberByUser();
 int n = GetNumberByUser();
